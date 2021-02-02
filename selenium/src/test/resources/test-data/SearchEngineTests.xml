@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testmethods>
+    <asUserTryToSearchForGivenDestinationAndDataRange>
+        <query>Hotel Bania Thermal &amp; Ski</query>
+    </asUserTryToSearchForGivenDestinationAndDataRange>
+    <asUserTryToSearchForGivenDestinationAndDataRange>
+        <query>Kłodzko</query>
+    </asUserTryToSearchForGivenDestinationAndDataRange>
+    <asUserTryToSearchForGivenDestinationAndDataRange>
+        <query>Zakopane</query>
+    </asUserTryToSearchForGivenDestinationAndDataRange>
+    <asUserTryToSearchForGivenDestinationAndDataRange>
+        <query>cokolwiek</query>
+    </asUserTryToSearchForGivenDestinationAndDataRange>
+</testmethods>

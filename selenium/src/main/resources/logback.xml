@@ -1,0 +1,47 @@
+<configuration>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- deny ERROR level -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>DENY</onMatch>
+        </filter>
+        <!-- deny WARN level -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>DENY</onMatch>
+        </filter>
+        <target>System.out</target>
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <charset>utf-8</charset>
+            <pattern>%d{dd/MM/yy HH:mm:ss.SSS} [TestNG] [%thread] %-5level %logger
+                - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="stderr" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- deny all events with a level below WARN, that is INFO, DEBUG and TRACE -->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+        <target>System.err</target>
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <charset>utf-8</charset>
+            <pattern>%d{dd/MM/yy HH:mm:ss.SSS} [TestNG] [%thread] %-5level %logger
+                - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="WARN">
+        <appender-ref ref="stderr"/>
+    </root>
+
+    <root level="INFO">
+        <appender-ref ref="stdout"/>
+    </root>
+
+    <logger name="io.netty" level="WARN"/>
+    <logger name="org.asynchttpclient" level="WARN"/>
+
+</configuration>
