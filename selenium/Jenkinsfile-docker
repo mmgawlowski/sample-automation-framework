@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Execute test') {
             steps {
-                sh 'mvn test' // Uruchomienie testów
+                sh 'mvn test -Dremote.run=true -pl selenium' // Uruchomienie testów
                 sh 'docker-compose down' // Wyłączenie Docker Selenium, wyłączenie kontenerów
             }
         }

@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Execute test') {
             steps {
-                sh 'mvn test' // Uruchomienie testów
+                sh 'mvn test -Dremote.run=false -pl selenium' // Uruchomienie testów
             }
         }
     }

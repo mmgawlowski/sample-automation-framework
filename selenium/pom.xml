@@ -13,7 +13,7 @@
 
     <properties>
         <browser>chrome</browser>
-        <remote.run>true</remote.run>
+        <remote.run>false</remote.run>
         <headless>false</headless>
     </properties>
 
