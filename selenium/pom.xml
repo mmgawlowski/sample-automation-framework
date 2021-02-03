@@ -70,7 +70,7 @@
                                     <filtering>true</filtering>
                                 </resource>
                                 <resource>
-                                    <directory>${project.basedir}/src/test/resources</directory>
+                                    <directory>${project.basedir}/src/main/resources</directory>
                                     <include>environment.properties</include>
                                     <targetPath>${project.basedir}/target/allure-results</targetPath>
                                     <filtering>true</filtering>
