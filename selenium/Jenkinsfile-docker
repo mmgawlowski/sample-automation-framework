@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run selenium grid') {
             steps {
-                sh 'docker-compose up -d' // Uruchomienie Docker Selenium
+                sh 'docker-compose -f selenium/docker-compose.yml up -d' // Uruchomienie Docker Selenium
             }
         }
         stage('Execute test') {
