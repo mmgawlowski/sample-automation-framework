@@ -78,7 +78,7 @@ Failed/broken:
 ## Authors:
 - Maciek Gawłowski [LinkedIn](https://www.linkedin.com/in/maciek-gaw%C5%82owski/)
 
-## Licence:
+## License:
 This project is under the MIT License
 
 ## Acknowledgments:
