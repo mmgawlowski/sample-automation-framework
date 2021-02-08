@@ -22,7 +22,7 @@ Steps to install the project locally:
 3. *Type `mvn install -DskipTests` and press enter.* 
 
 *IntelliJ*
-- Import the project as a new Maven project from Version Control or from an external model - [more information](https://www.jetbrains.com/help/idea/import-project-or-module-wizard.html?keymap=primary_windows#import-project)
+- *Import the project as a new Maven project from Version Control or from an external model - [more information](https://www.jetbrains.com/help/idea/import-project-or-module-wizard.html?keymap=primary_windows#import-project).*
 
 ## CI/CD
 Simple examples of configuration files:
@@ -55,7 +55,7 @@ The easiest way to run tests and generate a report:
 ```
 
 
-*Examples of generated test reports (Allure Framework):*
+*An example of generated test report (Allure Framework):*
 
 Overview:
 
