@@ -25,7 +25,7 @@ Steps to install the project locally:
 - Import the project as a new Maven project from Version Control or from an external model - [more information](https://www.jetbrains.com/help/idea/import-project-or-module-wizard.html?keymap=primary_windows#import-project)
 
 ## CI/CD
-A simple examples of configuration files:
+Simple examples of configuration files:
 - `Jenkinsfile`
 - `Jenkinsfile-docker`
 - `docker-compose.yml`
