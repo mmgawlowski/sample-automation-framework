@@ -3,18 +3,18 @@ pipeline {
     stages {
         stage('Build test code') {
             steps {
-                sh 'mvn clean install -DskipTests' // Budowanie testów
+                sh 'mvn clean install -DskipTests'
             }
         }
         stage('Execute test') {
             steps {
-                sh 'mvn test -Dremote.run=false -pl selenium' // Uruchomienie testów
+                sh 'mvn test -Dremote.run=false -pl selenium'
             }
         }
     }
     post {
         always {
-            script { // Wygenerowanie raportu Allurowego
+            script {
                 allure([
                         includeProperties: false,
                         jdk              : '',
