@@ -19,7 +19,7 @@ Steps to install the project locally:
 *Command line*:
 1. *Download the project directly from the repository to your hard drive.*
 2. *Open the command line in the project root folder.*
-3. *Type `maven install -DskipTests` and press enter.* 
+3. *Type `mvn install -DskipTests` and press enter.* 
 
 *IntelliJ*
 - Import the project as a new Maven project from Version Control or from an external model - [more information](https://www.jetbrains.com/help/idea/import-project-or-module-wizard.html?keymap=primary_windows#import-project)
