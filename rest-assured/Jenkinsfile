@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Execute test') {
             steps {
-                sh 'mvn test -Dremote.run=false -pl rest-assured'
+                sh 'mvn test -pl rest-assured'
             }
         }
     }
