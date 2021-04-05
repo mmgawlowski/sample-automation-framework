@@ -6,7 +6,7 @@ This is my demo project to show how to build a complete framework for testing we
 
 It consists of two sub-modules:
 - selenium
-- rest-assured (pre-development phase)
+- rest-assured
 
 ## Prerequisites:
 - JDK 11 (an installation package can be download from [here](https://www.oracle.com/pl/java/technologies/javase-jdk11-downloads.html) - remember to select the "Add to PATH" option during installation).
@@ -54,7 +54,6 @@ The easiest way to run tests and generate a report:
 </suiteXmlFiles>
 ```
 
-
 *An example of generated test report (Allure Framework):*
 
 Overview:
@@ -71,8 +70,27 @@ Failed/broken:
 ![Allure-broken](images/Allure_4.png)
 ![Allure-broken](images/Allure_5.png)
 
+#### Rest Assured
+In this module I used [ReqRes](https://reqres.in/), a hosted REST-API.
+Its capabilities are relatively limited and do not allow for advanced testing, but it is free and available to anyone.
+
+I built the tests based on the Request Object Pattern, mentioned in the JavaStart course.
+In the test methods themselves I tried to show many ways to assert that the received response meets the specified expectations.
+
+Running the tests is quite analogous to the selenium module, with one small difference: `mvn clean test allure:serve -pl rest-assured`
+
+*An example of generated test report (Allure Framework):*
+
+Passed:
+
+![AllureRA-passed](images/Allure_RA_1.png)
+
+Failed:
+
+![AllureRA-failed](images/Allure_RA_2.png)
+
 ## To do list:
-- [ ] rest-assured module
+- [x] rest-assured module
 - [ ] improved CI/CD configuration
 
 ## Authors:
